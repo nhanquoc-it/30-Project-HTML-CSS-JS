@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 03 - Modal Popup Material UI</title>
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button class="open__modal">Open Modal</button>
+    <div class="modal hide">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <p>Welcome to Modal Popup</p>
+          <i class="icon-close fa-solid fa-xmark"></i>
+        </div>
+        <div class="modal__body">
+          <h2>Modal</h2>
+          <p>Đây là phần Body của Modal</p>
+        </div>
+        <div class="modal__footer">
+          <button class="btn-close">Close</button>
+        </div>
+      </div>
+    </div>
+    <!-- Script JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>
