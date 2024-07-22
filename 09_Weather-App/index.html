@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 09 - Call API Building Weather App</title>
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="weather-app">
+      <input class="weather-app__search" type="text" placeholder="Search..." />
+      <div class="weather-app__content">
+        <h1 class="weather-app__capital">
+          <span class="weather-app__city">Ha Noi</span>
+          <span>, </span>
+          <span class="weather-app__country">VN</span>
+        </h1>
+        <div class="weather-app__times">12/24/2024, 3:25:45 PM</div>
+        <div class="weather-app__temperature">
+          <span class="weather-app__value">23</span>
+          <span><sup>o</sup>C</span>
+        </div>
+        <div class="weather-app__climate">Clouds</div>
+        <div class="weather-app__details">
+          <div class="weather-app__visibility">
+            <i class="weather-app__icon fa-solid fa-eye"></i>
+            <span class="weather-app__eye">10000 (m)</span>
+          </div>
+          <div class="weather-app__visibility">
+            <i class="weather-app__icon fa-solid fa-wind"></i>
+            <span class="weather-app__wind">0,51 (m/s)</span>
+          </div>
+          <div class="weather-app__visibility">
+            <i class="weather-app__icon fa-solid fa-sun"></i>
+            <span class="weather-app__sun">20(%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- File JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>

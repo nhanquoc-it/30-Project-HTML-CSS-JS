@@ -14,5 +14,9 @@
 
      2.2 - Boxicons :
 
-   - Website : https://boxicons.com/
-   - Sử dụng trong file 'index.html' dùng thẻ 'link' : https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css
+- Website : https://boxicons.com/
+- Sử dụng trong file 'index.html' dùng thẻ 'link' : https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css
+
+3. Kỹ thuật để biết được Website đang dữ liệu API nào ?
+
+- Vào Website cần kiểm tra API > Click chuột phải > Kiểm tra phần tử > Tab "Network" > Fetch/XHR > Header
