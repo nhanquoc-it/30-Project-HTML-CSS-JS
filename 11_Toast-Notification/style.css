@@ -1,0 +1,136 @@
+/* ============= IMPORT FONT GOOGLE =============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ============= RESET CSS =============*/
+:root {
+  --btn-bg-success: rgb(0, 128, 0);
+  --btn-bg-warning: rgb(255, 165, 0);
+  --btn-bg-error: rgb(255, 0, 0);
+
+  --toast-bg-success: rgba(0, 128, 0, 0.4);
+  --toast-bg-warning: rgba(255, 165, 0, 0.4);
+  --toast-bg-error: rgba(255, 0, 0, 0.4);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecf0f1;
+}
+/* ============= TOAST NOTIFICATION CSS =============*/
+.toast-notify button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.toast-notify--success {
+  background: var(--btn-bg-success);
+}
+.toast-notify--warning {
+  background: var(--btn-bg-warning);
+}
+.toast-notify--error {
+  background: var(--btn-bg-error);
+}
+/* ============= TOAST CONTENT CSS =============*/
+#toast-content {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.toast {
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  animation: toastShow 2s ease forwards;
+  margin-bottom: 10px;
+}
+.toast__icon {
+  margin-right: 15px;
+  font-size: 30px;
+}
+.toast__timeline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  animation: timeLine 4s 2s ease-in-out;
+}
+.toast--success {
+  background: var(--toast-bg-success);
+  border-left: 6px solid var(--btn-bg-success);
+}
+.toast--warning {
+  background: var(--toast-bg-warning);
+  border-left: 6px solid var(--btn-bg-warning);
+}
+.toast--error {
+  background: var(--toast-bg-error);
+  border-left: 6px solid var(--btn-bg-error);
+}
+.toast--success .toast__timeline {
+  background: var(--btn-bg-success);
+}
+.toast--warning .toast__timeline {
+  background: var(--btn-bg-warning);
+}
+.toast--error .toast__timeline {
+  background: var(--btn-bg-error);
+}
+/* ============= TOAST ANIMATION CSS =============*/
+/* .toast__timeline : animation */
+@keyframes timeLine {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/* .toast : animation */
+@keyframes toastShow {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(6%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes toastHide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(6%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
