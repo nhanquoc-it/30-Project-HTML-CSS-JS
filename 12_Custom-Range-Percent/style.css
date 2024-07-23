@@ -1,0 +1,48 @@
+/* ============= IMPORT FONT GOOGLE =============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ============= RESET CSS =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+/* ============= PROCESS BAR CSS =============*/
+h1 {
+  margin-bottom: 40px;
+  color: hsl(0, 0%, 10%);
+  transition: color 0.3s ease;
+}
+.process__bar {
+  border: 1px solid #aaa;
+  background: #fff;
+  width: 600px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.process__range {
+  background: linear-gradient(to right, #bb69cc, #246bac);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+}
