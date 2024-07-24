@@ -1,0 +1,86 @@
+/* ============= RESET CSS =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+body {
+  height: 100vh;
+  background: #dadada;
+}
+/* ============= SLIDESHOW CAROUSEL CSS =============*/
+.slideshow {
+  width: 80%;
+  height: 80%;
+  margin: 50px auto;
+}
+.slideshow__carousel {
+  height: 80%;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.slideshow__list {
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.slideshow__item {
+  flex: 1;
+  padding: 5px;
+}
+.slideshow__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+.slideshow__feature {
+  cursor: default;
+  transition: 1s;
+}
+.slideshow__item,
+.slideshow__feature {
+  border: 1px solid #000;
+}
+/* ============= ANIMATION IMAGE CSS =============*/
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* ============= CONTROL PREV & NEXT CSS =============*/
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #fff;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(223, 85, 85);
+}
+.btn--prev {
+  left: 10px;
+}
+.btn--next {
+  right: 10px;
+}
+.active {
+  background: rgb(223, 85, 85);
+}
