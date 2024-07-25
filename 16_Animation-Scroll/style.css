@@ -1,0 +1,86 @@
+/* ============= IMPORT FONT GOOGLE =============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ============= RESET CSS =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+/* ============= SECTION CSS =============*/
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+#home {
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  color: #fff;
+  padding: 100px;
+}
+#home .title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+#home .description {
+  font-size: 20px;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .box {
+  background: #242628;
+  padding: 20px;
+  color: #fff;
+  margin: 40px 20px;
+  height: 200px;
+  border-radius: 10px;
+}
+#about .title {
+  font-size: 30px;
+}
+#team {
+  background: linear-gradient(180deg, #017c2c 50%, #fff 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .member {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+#team .name {
+  color: #017c2c;
+  font-weight: bold;
+  font-size: 30px;
+}
+#team .description {
+  padding: 20px;
+}
+/* ============= ANIMATION CSS =============*/
+.animation-left-to-right {
+  transform: translateX(-200%);
+  transition: 1s;
+}
+.animation-right-to-left {
+  transform: translateX(200%);
+  transition: 1s;
+}
+.animation-left-to-right.active,
+.animation-right-to-left.active {
+  transform: translateX(0);
+}
+.animation-zoom {
+  transform: scale(0);
+  transition: 1s;
+}
+.animation-zoom.active {
+  transform: scale(1);
+}
