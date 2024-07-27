@@ -1,0 +1,42 @@
+/* ============= RESET CSS =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+/* ============= DRAWING APP CSS =============*/
+.drawing-app__tool {
+  background: rgb(90, 118, 179);
+  display: flex;
+  align-items: center;
+}
+.drawing-app__tool > * {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  margin: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+#save {
+  margin-left: auto;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+.drawing-app__paint {
+  display: flex;
+  justify-content: center;
+  background: #ccc;
+  height: 100vh;
+}
+#canvas {
+  border: 1px solid #000;
+  margin: 20px auto;
+  background: #fff;
+}
