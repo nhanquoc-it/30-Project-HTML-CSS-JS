@@ -1,0 +1,58 @@
+/* ============= IMPORT FONT GOOGLE =============*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ============= RESET CSS =============*/
+:root {
+  --primary-typing-color: #96ee1c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ============= TYPING CSS =============*/
+#typing-text-css,
+#typing-text-js {
+  justify-items: flex-start;
+  color: var(--primary-typing-color);
+  font-weight: bold;
+  font-size: 70px;
+  text-shadow: 0 0 100px var(--primary-typing-color);
+  /* Method 1 : Using CSS "animation" */
+  /* animation: typing 10s steps(30) infinite, blink 1s infinite; */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid var(--primary-typing-color);
+  /* Method 2: Use CSS "animation blink" combined with JS */
+  animation: blink 1s infinite;
+}
+/* ============= KEYFRAMES ANIMATION USING CSS =============*/
+@keyframes typing {
+  0%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-typing-color);
+  }
+}
