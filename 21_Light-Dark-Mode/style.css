@@ -1,0 +1,106 @@
+/* ============= IMPORT FONT GOOGLE =============*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ============= RESET CSS =============*/
+:root {
+  --size-switch: 30px;
+  --color-switch: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  transition: 0.5s;
+}
+body {
+  /* Light Themes */
+  --primary-color: blue;
+  --background-color: #eee;
+  --background-box: #595959;
+  --color-box: #f8f8f8;
+  --text-color: #fff;
+  --box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  background: var(--background-color);
+}
+body.dark {
+  /* Dark Themes */
+  --primary-color: green;
+  --background-color: #313030;
+  --background-box: #f8f8f8;
+  --color-box: #595959;
+  --box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+/* ============= SWITCH CSS =============*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switch-toggle {
+  background: var(--primary-color);
+  width: 80px;
+  height: var(--size-switch);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+.switch-toggle label {
+  width: var(--size-switch);
+  height: var(--size-switch);
+  background: var(--color-switch);
+  border-radius: 50%;
+  display: block;
+  transition: 0.5s;
+}
+.switch-toggle input:checked + label {
+  margin-left: 80px;
+  transform: translateX(-100%);
+}
+.title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+h1 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+.box {
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-box);
+  background: var(--background-box);
+  text-align: justify;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: var(--primary-color);
+  color: var(--text-color);
+  margin-top: 20px;
+}
+
+.logo,
+.switch-toggle,
+.switch-toggle label,
+.btn {
+  cursor: pointer;
+}
