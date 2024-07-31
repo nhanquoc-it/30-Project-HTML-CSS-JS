@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 25 - Custom Video Player</title>
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="video-player">
+      <video>
+        <source src="./video/dung-lam-trai-tim-anh-dau.mp4" type="video/mp4" />
+      </video>
+      <div class="video-control">
+        <div class="video-control__play">
+          <i class="video-icon bx bx-play-circle"></i>
+        </div>
+        <div class="video-control__time">00:00/00:00</div>
+        <div class="video-control__progress">
+          <div class="video-control__progress-fill"></div>
+        </div>
+        <div class="video-control__prev">
+          <i class="video-icon bx bx-skip-previous-circle"></i>
+        </div>
+        <div class="video-control__next">
+          <i class="video-icon bx bx-skip-next-circle"></i>
+        </div>
+        <div class="video-control__volume">
+          <i class="video-icon bx bx-volume-full"></i>
+          <input type="range" min="0" max="1" step="0.05" />
+        </div>
+      </div>
+    </div>
+    <!-- Link JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>

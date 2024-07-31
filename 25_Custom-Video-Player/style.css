@@ -1,0 +1,62 @@
+/* ============= RESET CSS =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* ============= CUSTOM VIDEO PLAYER CSS =============*/
+.video-player {
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.video-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 5px;
+  background: rgb(226, 226, 226);
+  transform: translateY(150%);
+  transition: 0.5s;
+}
+.video-player:hover .video-control {
+  transform: unset;
+}
+.video-control > * {
+  margin: 0 2px;
+}
+.video-control__progress {
+  background: #9f9f9f;
+  height: 5px;
+  position: relative;
+  flex: 1;
+}
+.video-control__progress-fill {
+  background: red;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-icon {
+  font-size: 40px;
+}
+.video-control__volume {
+  display: flex;
+  align-items: center;
+}
