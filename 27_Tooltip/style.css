@@ -1,0 +1,124 @@
+/* ============= IMPORT FONT GOOGLE =============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ============= RESET CSS =============*/
+:root {
+  --facebook-color: #3b5999;
+  --github-color: #333;
+  --youtube-color: #de463b;
+  --twitter-color: #46c1f6;
+  --instagram-color: #e1306c;
+  --white-color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+/* ============= TOOLTIP CSS =============*/
+.tooltip-social {
+  display: flex;
+}
+.tooltip-item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--white-color);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.5s, color 0.5s;
+  margin: 0 40px;
+}
+.tooltip-icon {
+  font-size: 40px;
+}
+.tooltip-name {
+  position: absolute;
+  background: var(--facebook-color);
+  color: var(--white-color);
+  padding: 0 30px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  transition: 0.5s all;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-name::before {
+  background: var(--facebook-color);
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.tooltip-item:hover .tooltip-name {
+  top: -70px;
+  opacity: 1;
+}
+
+/* ============= TOOLTIP HOVER =============*/
+.tooltip-item.facebook {
+  color: var(--facebook-color);
+}
+.tooltip-item.github {
+  color: var(--github-color);
+}
+.tooltip-item.youtube {
+  color: var(--youtube-color);
+}
+.tooltip-item.twitter {
+  color: var(--twitter-color);
+}
+.tooltip-item.instagram {
+  color: var(--instagram-color);
+}
+.tooltip-item.facebook:hover,
+.facebook .tooltip-name,
+.facebook .tooltip-name::before {
+  background: var(--facebook-color);
+  color: var(--white-color);
+}
+.tooltip-item.github:hover,
+.github .tooltip-name,
+.github .tooltip-name::before {
+  background: var(--github-color);
+  color: var(--white-color);
+}
+.tooltip-item.youtube:hover,
+.youtube .tooltip-name,
+.youtube .tooltip-name::before {
+  background: var(--youtube-color);
+  color: var(--white-color);
+}
+.tooltip-item.twitter:hover,
+.twitter .tooltip-name,
+.twitter .tooltip-name::before {
+  background: var(--twitter-color);
+  color: var(--white-color);
+}
+.tooltip-item.instagram:hover,
+.instagram .tooltip-name,
+.instagram .tooltip-name::before {
+  background: var(--instagram-color);
+  color: var(--white-color);
+}
